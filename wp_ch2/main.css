@@ -1,0 +1,9 @@
+h1{ font-size: 24px; font-family: 궁서체; color: #06f;} /* h1테그에만 적용 */
+
+body{
+    padding: 0px;
+    margin: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: burlywood;
+  }

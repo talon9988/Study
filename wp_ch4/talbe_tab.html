@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2부 3장 글꼴 조합</title>
+<td id="3-1"> 
+	<style>
+		#3-1{
+			background-color: rgb(194, 255, 255);
+		}
+	</style>
+<style type="text/css">
+p {
+	font-size: 1.5em;
+	color: #000;
+	line-height:1em;
+}
+p.txt1 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+p.txt2 {
+	font-family: Georgia, "Times New Roman", Times, serif;	
+}
+p.txt3 {
+	font-family: "Courier New", Courier, monospace;	
+}
+p.txt4 {
+	font-family: Arial, Helvetica, sans-serif;	
+}
+p.txt5 {
+	font-family: Tahoma, Geneva, sans-serif;	
+}
+p.txt6 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;	
+}
+p.txt7 {
+	font-family: "Arial Black", Gadget, sans-serif;	
+}
+p.txt8 {
+	font-family: "Times New Roman", Times, serif;	
+}
+p.txt9 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;	
+}
+p.txt10 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;	
+}
+p.txt11 {
+	font-family: "MS Serif", "New York", serif;	
+}
+p.txt12 {
+	font-family: "Lucida Console", Monaco, monospace;	
+}
+p.txt13 {
+	font-family: "Comic Sans MS", cursive;
+}
+
+table{
+
+	border-collapse: collapse; 	/* 경계를 선 한개로 퉁침 */
+	width: 30%;
+	margin: 60px;
+	background-color: rgb(194, 255, 255);
+	float: left;
+	text-align: center;
+	;
+}
+
+tr, td {
+	border: 5px solid #ffffff;
+    padding: 10px;
+	}
+
+/*테이블의 첫째행에 관한 스타일 지정*/
+table tr:first-child { 
+    background-color: #4a90e2;
+	/* 글자색 */
+    color: white;
+  }
+  /*테이블의 첫째열에 관한 스타일 지정*/
+  table td:first-child { 
+    background-color: #e24add;
+	/* 글자색 */
+    color: rgb(56, 6, 80);
+  }
+  /* firstchild : 형제중 첫번째 , 나머지는 nth child */
+  /* 짝수 열에만 스타일 → td:nth-child(even) */
+  /* 홀수 열에만 스타일 → td:nth-child(odd) */
+  /* 3의 배수 칸만 → td:nth-child(3n) */
+ 
+
+</style>
+
+</head>
+
+<body>
+
+	<table border="1">
+		<tr>
+			<td><strong>1-1</strong></td>
+			<td><strong>1-2</strong></td>
+			<td><strong>1-3</strong></td>
+			<td><strong>1-4</strong></td>
+		</tr>
+		<tr>
+			<td rowspan="2">2-1</td>
+			<td>2-2</td>
+			<td>2-3</td>
+			<td>2-4</td>
+		</tr>
+		<tr>
+			<td >3-1</td>
+			<td>3-2</td>
+			<td>3-3</td>
+		</tr>
+		
+	</table>
+	
+	<table border="1">
+		<tr>
+			<td><strong>1-1</strong></td>
+			<td><strong>1-2</strong></td>
+			<td><strong>1-3</strong></td>
+			<td><strong>1-4</strong></td>
+		</tr>
+		<tr>
+			<td>2-1</td>
+			<td>2-2</td>
+			<td colspan="3">2-3</td>
+		</tr>
+		<tr>
+			<td>3-1</td>
+			<td>3-2</td>
+			<td>3-3</td>
+			<td>3-4</td>
+		</tr>
+		
+	</table>
+
+</body>
+</html>
