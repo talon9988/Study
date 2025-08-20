@@ -1,0 +1,22 @@
+package ch13.sec03.exam01;
+
+public class GenericExample {
+	//제네릭 메소드 선언
+	public static <T> Box<T> boxing(T t) {
+		Box<T> box = new Box<T>(); //박스 객체 보냄
+		box.set(t);
+		return box; //박스 객체 보냄
+	}	
+	
+	public static void main(String[] args) {
+		//제네릭 메소드 호출
+		Box<Integer> box1 = boxing(100); //위에 선언한 스태틱 메소드를 호출해서 정수형 객체를 선언
+		int intValue = box1.get();
+		System.out.println(intValue);
+		
+		//제네릭 메소드 호출
+		Box<String> box2 = boxing("홍길동");
+		String strValue = box2.get();
+		System.out.println(strValue);
+	}
+}
