@@ -1,0 +1,58 @@
+package com.javaex.problem02;
+
+public class Friend {
+  private String name;
+  private String hp;
+  private String school;
+  /**
+   * @return the name
+   */
+  public String getName() {
+    return name;
+  }
+  /**
+   * @param name the name to set
+   */
+  public void setName(String name) {
+    this.name = name;
+  }
+  /**
+   * @return the hp
+   */
+  public String getHp() {
+    return hp;
+  }
+  /**
+   * @param hp the hp to set
+   */
+  public void setHp(String hp) {
+    this.hp = hp;
+  }
+  /**
+   * @return the school
+   */
+  public String getSchool() {
+    return school;
+  }
+  /**
+   * @param school the school to set
+   */
+  public void setSchool(String school) {
+    this.school = school;
+  }
+  /**
+   * @param name
+   * @param hp
+   * @param school
+   */
+  public Friend(String name, String hp, String school) {
+    this.name = name;
+    this.hp = hp;
+    this.school = school;
+  }
+  @Override
+  public String toString() {
+    return "이름 : " + name + ", 핸드폰 : " + hp + ", 학교 : " + school;
+  }
+  
+}
